@@ -1,0 +1,126 @@
+.option-content{
+    margin-top: 1px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.option-disable{
+    background-color: #eeeeef;
+    margin-top: 1px;
+    padding: 8px;
+    color: #ccc;
+    opacity: 0.8;
+}
+.option-content:hover{
+    background-color: #5897fb;
+    color: white;
+}
+.seach-input{
+width: calc(100% - 8px) ;
+border:#ccc;
+border-left:0 ;
+border-right:0 ;
+margin:0 0 12px 0;
+height: 30px;
+padding-left: 7px;
+box-shadow: rgb(198, 207, 216) 3px 3px 6px 0px inset, white -3px -3px 6px 1px inset;
+
+}
+.seach-input:focus{
+    outline: none;
+}
+
+.items-block{
+    max-height: 200px;
+    overflow: auto;
+}
+
+.hide{
+    display: none;
+}
+
+.selected_item{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    width: fit-content;
+}
+
+.selected_item .texte{
+    color: white;
+    padding-left: 3px;
+    width: 115px;
+    overflow-x: hidden;
+}
+.selected_item .remove{
+    height: inherit;
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    width: 35px;
+    text-align: center;
+    border-right: 1px solid rgb(153, 153, 153);
+}
+.selected_block{
+    margin-bottom: 5px;
+}
+
+.selected_items{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 100px;
+}
+.autocomplite{
+    position: relative;
+    padding: 5px 0;
+    margin: 10px;
+}
+.selected_values{
+    border: 1px solid rgb(222, 222, 222);
+    min-height: 30px;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #79797a;
+}
+.selected_values_open{
+    border: 1px solid rgb(222, 222, 222);
+    min-height: 30px;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #79797a;
+    /* border-bottom: 0; */
+}
+.seach_block{
+    border: 1px solid rgb(211, 211, 211);
+    border-top: 0;
+    padding:5PX;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: white;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.detail{
+    font-size: small;
+    color: #79797a;
+    margin-left: 5px;
+}
+.search-open{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
