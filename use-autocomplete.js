@@ -2,7 +2,7 @@ import { SearchItem, Options, Selected,setDefaultSelect } from './fonctions';
 import { useState ,useEffect} from 'react';
 import './index.css';
 
-function Autocomplete({option={},result=()=>{}})
+function AutocompleteComponent({option={},result=()=>{}})
 {
     const { data = [], defaultSeach = '', searchPlaceholder = "Search...", multiple = false, placeholder = "Select name",
         defaulShow = false, defaultSelect = false,instructionMessage="Enter one or more characters",norResult="no results found"} = option;
@@ -60,4 +60,4 @@ function Autocomplete({option={},result=()=>{}})
     </div>
 }
 
-export default Autocomplete;
+export default AutocompleteComponent;
