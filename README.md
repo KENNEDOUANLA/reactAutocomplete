@@ -15,6 +15,11 @@ const option = {
 }
 
 
+
+            EXEMPLE : 
+                  const [data,setData]=useState('');
+                  <AutocompleteComponent option={option} result={setData}/>
+
 This component takes as props: option and result .
 
  *** result is the function that sets your result.
