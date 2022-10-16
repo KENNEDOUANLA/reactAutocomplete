@@ -2,23 +2,25 @@
 autocomplete input on reactjs .
 AutocompleteComponent .
 
-const option = {
-   data: [],
-   multiple: false,
-   placeholder: "Select name",
-   searchPlaceholder:'Search ...',
-   defaultSeach:'',
-   defaultShow: false,
-   defaultSelect: 0,
-   instructionMessage: "mon message",
-   norResult:"Aucune valeur trouvée"
-}
-
-
-
             EXEMPLE : 
-                  const [data,setData]=useState('');
-                  <AutocompleteComponent option={option} result={setData}/>
+                  
+                  const data=[{label:” label1 ”, id:1,disabled:false,detail:”details”} , {label:” label2 ”, id:2}]
+                  
+                  const [result,setResult]=useState('');
+                  
+                  const option = {
+                        data: data,                         //default []
+                        multiple: false,                    //Optional
+                        placeholder: "Select name",         //Optional
+                        searchPlaceholder:'Search ...',     //Optional
+                        defaultSeach:'',                    //Optional
+                        defaultShow: false,                 //Optional
+                        defaultSelect: 0,                   //Optional
+                        instructionMessage: "mon message",  //Optional
+                        norResult:"Aucune valeur trouvée"   //Optional
+                   }
+                   
+                  <AutocompleteComponent option={option} result={setResult}/>
 
 This component takes as props: option and result .
 
